@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family:'Work sans'
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav .nav-link{
+  margin: 0 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table .fas{
+  position: relative;
+  z-index: 1;
+  margin: 0 .2rem;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.table .fa-eye{
+  color:rgb(172, 14, 101);
+  font-size:16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table .fa-edit{
+  color:rgb(51, 10, 116);
+  font-size:16px;
+}
+.table .fa-trash{
+  color:rgb(191, 8, 26);
+  font-size:16px;
+}
+/* .table .fas::after{
+  position: absolute;
+  content: '';
+  background:rgb(255, 255, 255);
+  clip-path: circle(70px at center);
+  width:2rem;
+  height:2rem;
+  padding: 1rem;
+  border-radius:50%;
+  z-index: -1;
+  left:0;
+  top:0;
+} */
+.addusers .form-group{
+  margin:.5rem 0;
+}
+.users p{
+  font-size:16px;
+  font-weight:600;
+}
+.users p span{
+  font-size:14px;
+  font-weight:400;
+  font-family:'Poppins'
+}
+.table-section .btn{
+    padding: .4rem;
+    margin:0 .2rem;
+    font-size:10px;
 }
